@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/more_btn_brands"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="@drawable/more_btn_shape_color"
+        android:text="@string/btn_more"
+        android:textSize="12dp"
+        android:textColor="@color/icons"
+        android:layout_margin="5dp"/>
+
+    <TextView
+        android:id="@+id/most_value_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/brands"
+        android:textSize="17dp"
+        android:layout_marginEnd="10dp"
+        android:layout_alignBaseline="@+id/more_btn_brands"
+        android:layout_alignBottom="@+id/more_btn_brands"
+        android:layout_alignParentEnd="true" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/brands_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/more_btn_brands"
+        android:layout_marginTop="10dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

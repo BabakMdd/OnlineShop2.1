@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/grid_design">
+
+    <ImageView
+        android:id="@+id/grid_img"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
+
+    <View
+        android:id="@+id/seprator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/grid_img"
+        android:background="@color/more_btn"
+        android:layout_marginTop="5dp"></View>
+
+    <TextView
+        android:id="@+id/grid_disc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/seprator"
+        android:textAlignment="center"
+        android:background="@color/more_btn"
+        android:textColor="@color/icons"/>
+
+</RelativeLayout>

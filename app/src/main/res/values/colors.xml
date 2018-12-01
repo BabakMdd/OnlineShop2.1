@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#673AB7</color>
+    <color name="colorPrimaryDark">#512DA8</color>
+    <color name="colorAccent">#E040FB</color>
+    <color name="primary_light">#d7d4dc</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#BDBDBD</color>
+    <color name="list_btn">#66005c</color>
+    <color name="more_btn">#ab009a</color>
+    <color name="price_color">#00af00</color>
+    <color name="toast_background">#6c6c6c</color>
+    <color name="Grid_Item">#30062c</color>
+    <color name="grey_ivory5">#8b0000</color>
+    <color name="delete_cart">#ff0000</color>
+</resources>

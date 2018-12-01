@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent" android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/no_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/no_item_basket"
+        android:visibility="invisible"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/shopping_cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/amount"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/shopping_cart"
+        android:background="@color/icons"
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/total_price"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/cardview_dark_background"
+            android:gravity="center"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_pay"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/price_color"
+        android:layout_below="@+id/amount"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/icons"
+            android:gravity="center"
+            android:text="@string/cart_pay"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+</ScrollView>

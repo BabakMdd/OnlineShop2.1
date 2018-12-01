@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/search_click">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        style="@style/MyCardViewStyle">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/product_img_search"
+                android:layout_width="match_parent"
+                android:layout_height="70dp" />
+
+            <TextView
+                android:id="@+id/disc_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/product_img_search"
+                android:textAlignment="center"
+                android:layout_marginTop="5dp"
+                android:textSize="13dp"
+                />
+
+            <View
+                android:id="@+id/seprator_search"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/disc_search"
+                android:background="@color/divider"></View>
+
+            <TextView
+                android:id="@+id/price_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_below="@+id/seprator_search"
+                android:layout_marginTop="7dp"
+                android:textColor="@color/price_color"/>
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_width="match_parent" android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/content_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primary_light"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.example.pishgam.onlineshop2.Activities.Main"
+        tools:showIn="@layout/app_bar_main">
+
+        <com.example.pishgam.onlineshop2.Utilities.ViewFlipperIndicator
+            android:id="@+id/Slideshow"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="220dp"
+            android:flipInterval="3000"
+            android:inAnimation="@anim/slideshow_in"
+            android:outAnimation="@anim/slideshow_out">
+
+            <ImageView
+                android:id="@+id/MainImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/slide1"
+                />
+
+            <ImageView
+                android:id="@+id/secondImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/slide2" />
+
+            <ImageView
+                android:id="@+id/thirdImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/slide3" />
+
+            <ImageView
+                android:id="@+id/forthImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/slide4" />
+        </com.example.pishgam.onlineshop2.Utilities.ViewFlipperIndicator>
+
+        <LinearLayout
+            android:id="@+id/icon_container"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/Slideshow"
+            android:background="@color/list_btn"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/list"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@+id/Slideshow"
+                android:layout_marginTop="10dp"
+                android:background="@color/list_btn"
+                android:text="@string/btn_list"
+                android:textSize="15dp"
+                android:textColor="@color/icons"
+                android:textAlignment="center"
+                android:drawableRight="@drawable/lists"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginBottom="7dp"
+                android:layout_marginRight="97dp"
+                android:onClick="allProducts"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/value_include"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/icon_container"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <include android:layout_width="match_parent"
+                android:layout_height="wrap_content" layout="@layout/main_most_value_list" ></include>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/new_include"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/value_include"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <include android:layout_width="match_parent"
+                android:layout_height="wrap_content" layout="@layout/main_newest_product_list" ></include>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/brand_include"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/new_include"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <include android:layout_width="match_parent"
+                android:layout_height="wrap_content" layout="@layout/main_brands_list" ></include>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
+

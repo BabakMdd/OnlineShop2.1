@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="120dp"
+    android:id="@+id/mens_click">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/MyCardViewStyle"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/mens_product_disc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="aaaaaaaaa"
+                android:textSize="15dp"
+                android:layout_marginTop="21dp"
+                android:layout_alignTop="@+id/list_icon"
+                android:layout_toEndOf="@+id/list_icon"
+                android:layout_marginStart="15dp" />
+
+            <com.example.pishgam.onlineshop2.Utilities.RoundedImageView
+                android:id="@+id/list_icon"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignTop="@+id/arrow"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:id="@+id/arrow"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/movee"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

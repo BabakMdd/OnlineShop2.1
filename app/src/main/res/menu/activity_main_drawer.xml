@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+       <item android:title="@string/login_register"
+           android:icon="@drawable/login"
+           android:id="@+id/login_register"></item>
+    </group>
+
+    <item android:title="@string/categories">
+        <menu>
+            <item android:id="@+id/mens_clothes"
+            android:title="@string/mens"
+            android:icon="@drawable/clothes"></item>
+
+            <item android:id="@+id/womens_clothes"
+                android:title="@string/womens"
+                android:icon="@drawable/clothes"></item>
+
+            <item android:id="@+id/childs_clothes"
+                android:title="@string/childs"
+                android:icon="@drawable/clothes"></item>
+
+            <item android:id="@+id/sport_clothes"
+                android:title="@string/sport"
+                android:icon="@drawable/clothes"></item>
+        </menu>
+    </item>
+
+    <item android:title="@string/offers_discount">
+        <menu>
+            <item android:id="@+id/special_sale"
+                android:title="@string/discount"
+                android:icon="@drawable/special"></item>
+
+            <item android:id="@+id/most_valueable"
+                android:title="@string/most_value"
+                android:icon="@drawable/special"></item>
+        </menu>
+    </item>
+
+    <item android:title="@string/sides">
+        <menu>
+            <item android:id="@+id/contact_Us"
+                android:title="@string/contactUs"
+                android:icon="@drawable/contactus"></item>
+
+            <item android:id="@+id/aboutus"
+                android:title="@string/about_us"
+                android:icon="@drawable/contactus"></item>
+
+            <item android:id="@+id/abouDesigner"
+                android:title="@string/about_designer"
+                android:icon="@drawable/contactus"></item>
+
+            <item android:id="@+id/guide"
+                android:title="@string/help"
+                android:icon="@drawable/help"></item>
+        </menu>
+    </item>
+
+
+</menu>
